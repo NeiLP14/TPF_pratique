@@ -1,32 +1,29 @@
-# Secrets and local configuration
-.env
-.env.act
-!.env.example
-
 # Python
-.venv/
-venv/
 __pycache__/
 *.py[cod]
-.pytest_cache/
-.ruff_cache/
-.coverage
-coverage.xml
-htmlcov/
-*.db
+*.pyo
 
-# Node / front
-node_modules/
-dist/
-coverage/
-playwright-report/
-test-results/
-blob-report/
-*.tsbuildinfo
+# Environnements virtuels
+venv/
+.venv/
+env/
 
-# Editors and OS
-.vscode/*
-!.vscode/extensions.json
+# Variables d'environnement
+.env
+.env.*
+
+# IDE
+.vscode/
 .idea/
+
+# Système
 .DS_Store
+Thumbs.db
+
+# Tests et couverture
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Git
 *.log
